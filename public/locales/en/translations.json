@@ -1,6 +1,6 @@
 {
   "header": {
-    "name": "Your Name"
+    "name": "Min-Su Kim"
   },
   "nav": {
     "bio": "About",
@@ -10,21 +10,21 @@
     "contact": "Contact"
   },
   "bio": {
-    "name": "Your Name",
-    "nameJp": "あなたの名前",
+    "name": "Min-Su Kim",
+    "nameJp": "金珉秀",
     "phd": "",
-    "phdJp": "博士（工学）",
-    "position": "Postdoctoral Researcher",
-    "affiliation": "Institute of Engineering Innovation, The University of Tokyo",
-    "github": "https://github.com/yourusername",
-    "scholar": "https://scholar.google.com/citations?user=your-id",
-    "orcid": "https://orcid.org/0000-0000-0000-0000",
+    "phdJp": "",
+    "position": "PhD Student",
+    "affiliation": "Institute of Engineering Innovation, The University of Tokyo | Department of Materials Science and Engineering, Pohang University of Science and Technology (POSTECH)",
+    "github": "https://github.com/Min-Su Kim",
+    "scholar": "https://scholar.google.com/citations?user=u1BcLk0AAAAJ&hl=en&authuser=1",
+    "orcid": "https://orcid.org/0009-0005-6845-9752",
     "researchmap": "https://researchmap.jp/yourusername",
     "linkedin": "https://www.linkedin.com/in/yourusername/",
     "researchInterests": "Research Interests",
     "researchTags": [
-      "Mathematics",
-      "Physics"
+      "Scanning Transmission Electron Microscopy",
+      "Oxide membranes"
     ]
   },
   "publications": {
@@ -61,13 +61,13 @@
     "location": "Location",
     "relatedLinks": "Related Links",
     "email": "Email",
-    "emailAdress": "your.email[at]example.com",
+    "emailAdress": "minsukim@sigma.t.u-tokyo.ac.jp",
     "phone": "Phone",
-    "phoneNumber": "+81-3-5841-7689",
+    "phoneNumber": "080-6462-5284",
     "address": "Address",
     "addressLine1": "Electron Microscopy and Materials Science Laboratory",
     "addressLine2": "The University of Tokyo",
-    "addressLine3": "Room 419, Faculty of Engineering Bldg. 9, 2-11-16 Yayoi, Bunkyo-ku, Tokyo 113-0032, Japan",
+    "addressLine3": "Room 428, Faculty of Engineering Bldg. 9, 2-11-16 Yayoi, Bunkyo-ku, Tokyo 113-0032, Japan",
     "socialMedia": "",
     "linkedin": "",
     "facebook": "",
