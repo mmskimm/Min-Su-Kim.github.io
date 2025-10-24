@@ -25,18 +25,9 @@
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
     "startDate": "2025",
-    "endDate": "Prsent",
-    "description": "",
-    "type": "education"
-  },
-  {
-    "id": "career-4",
-    "position": "Postdoctoral Researcher",
-    "organization": "The University of Tokyo",
-    "location": "Tokyo, Japan",
-    "startDate": "2025",
-    "endDate": null,
+    "endDate": "Present",
     "description": "",
     "type": "work"
-  }
+  },
+ 
 ]
