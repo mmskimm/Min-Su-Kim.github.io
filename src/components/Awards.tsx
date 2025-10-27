@@ -14,15 +14,16 @@ const Awards: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabType>("awards");
   const [showAll, setShowAll] = useState<boolean>(false);
   const maxItems = 6;
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
         // 言語に応じたJSONファイルのパス
-        const awardsPath = `/api/awards.json`;
-        const grantsPath = `/api/researchProjects.json`;
-        const projectsPath = `./content/etc/projects_${i18n.language}.json`;
+        const awardsPath = `${baseUrl}api/awards.json`;
+        const grantsPath = `${baseUrl}api/researchProjects.json`;
+        const projectsPath = `${baseUrl}content/etc/projects_${i18n.language}.json`;
 
         // 並列でデータをフェッチ
         const [awardsResponse, grantsResponse, projectsResponse] =
@@ -64,7 +65,7 @@ const Awards: React.FC = () => {
     };
 
     fetchData();
-  }, [i18n.language]);
+  }, [i18n.language, baseUrl]);
 
   // タブ切り替えハンドラ
   const handleTabChange = (tab: TabType) => {

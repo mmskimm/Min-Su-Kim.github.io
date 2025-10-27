@@ -5,6 +5,7 @@ import { CiPhone, CiMail, CiLocationOn } from "react-icons/ci";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
     <section id="contact" className="py-16 bg-primary text-white">
@@ -119,7 +120,7 @@ const Contact: React.FC = () => {
                   className="flex items-center hover:text-accent transition-colors"
                 >
                   <img
-                    src="/images/lab-logo.png"
+                    src={`${baseUrl}images/lab-logo.png`}
                     alt={t("contact.labName")}
                     className="h-10 mr-3"
                   />

@@ -2,13 +2,13 @@
  * シンプルなsitemap.xmlとrobots.txt生成スクリプト
  * 単一ページサイト向け
  */
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // 設定 - サイトのURLを実際のものに変更してください
-const SITE_URL = 'https://Min-Su Kim.github.io';
-const DIST_DIR = path.resolve(__dirname, '../dist');
-const LAST_MOD = new Date().toISOString().split('T')[0]; // YYYY-MM-DD形式
+const SITE_URL = "https://Min-Su-Kim.github.io";
+const DIST_DIR = path.resolve(__dirname, "../dist");
+const LAST_MOD = new Date().toISOString().split("T")[0]; // YYYY-MM-DD形式
 
 // 出力ディレクトリが存在するか確認
 if (!fs.existsSync(DIST_DIR)) {
@@ -28,7 +28,7 @@ function generateSitemap() {
   </url>
 </urlset>`;
 
-  const sitemapPath = path.join(DIST_DIR, 'sitemap.xml');
+  const sitemapPath = path.join(DIST_DIR, "sitemap.xml");
   fs.writeFileSync(sitemapPath, sitemapContent);
   console.log(`Generated sitemap.xml at: ${sitemapPath}`);
 }
@@ -41,7 +41,7 @@ Allow: /
 # サイトマップの場所
 Sitemap: ${SITE_URL}/sitemap.xml`;
 
-  const robotsPath = path.join(DIST_DIR, 'robots.txt');
+  const robotsPath = path.join(DIST_DIR, "robots.txt");
   fs.writeFileSync(robotsPath, robotsContent);
   console.log(`Generated robots.txt at: ${robotsPath}`);
 }
@@ -50,4 +50,4 @@ Sitemap: ${SITE_URL}/sitemap.xml`;
 generateSitemap();
 generateRobots();
 
-console.log('✅ SEOファイルの生成が完了しました');
+console.log("✅ SEOファイルの生成が完了しました");

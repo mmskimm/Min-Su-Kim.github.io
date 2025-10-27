@@ -10,12 +10,15 @@ const Bio: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [bioContent, setBioContent] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const fetchBioContent = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(`./content/bio/bio_${i18n.language}.md`);
+        const response = await fetch(
+          `${baseUrl}content/bio/bio_${i18n.language}.md`
+        );
         const content = await response.text();
         setBioContent(content);
       } catch (error) {
@@ -27,7 +30,7 @@ const Bio: React.FC = () => {
     };
 
     fetchBioContent();
-  }, [i18n.language]);
+  }, [i18n.language, baseUrl]);
 
   // 研究タグのリスト
   const researchTagsResult = t("bio.researchTags", { returnObjects: true });
@@ -42,7 +45,7 @@ const Bio: React.FC = () => {
           {/* プロフィール写真 */}
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg flex-shrink-0">
             <img
-              src="/images/profile.png"
+              src={`${baseUrl}images/profile.png`}
               alt={t("bio.name")}
               className="w-full h-full object-cover"
             />
@@ -132,7 +135,7 @@ const Bio: React.FC = () => {
                     aria-label="ORCID"
                   >
                     <img
-                      src="/ORCID-iD_icon_vector.svg"
+                      src={`${baseUrl}ORCID-iD_icon_vector.svg`}
                       alt="ORCID"
                       className="h-6 w-6"
                     />
@@ -149,7 +152,11 @@ const Bio: React.FC = () => {
                     className="text-secondary hover:text-accent transition-colors"
                     aria-label="Researchmap"
                   >
-                    <img src="/rm.png" alt="Researchmap" className="h-6 w-6" />
+                    <img
+                      src={`${baseUrl}rm.png`}
+                      alt="Researchmap"
+                      className="h-6 w-6"
+                    />
                   </a>
                   <span className="text-sm text-gray-600">Researchmap</span>
                 </div>
@@ -163,7 +170,11 @@ const Bio: React.FC = () => {
                     className="text-secondary hover:text-accent transition-colors"
                     aria-label="LinkedIn"
                   >
-                    <img src="/linkedin.png" alt="LinkedIn" className="h-6 w-6" />
+                    <img
+                      src={`${baseUrl}linkedin.png`}
+                      alt="LinkedIn"
+                      className="h-6 w-6"
+                    />
                   </a>
                   <span className="text-sm text-gray-600">LinkedIn</span>
                 </div>

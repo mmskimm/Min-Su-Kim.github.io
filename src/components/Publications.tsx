@@ -15,6 +15,7 @@ const Publications: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [showAll, setShowAll] = useState<boolean>(false);
   const maxItems = 5;
+  const baseUrl = import.meta.env.BASE_URL;
 
   // 論文データの有無を確認し、デフォルトタブを設定
   useEffect(() => {
@@ -22,7 +23,7 @@ const Publications: React.FC = () => {
 
     const checkPapersAndSetDefaultTab = async () => {
       try {
-        const response = await fetch("/api/papers.json", {
+        const response = await fetch(`${baseUrl}api/papers.json`, {
           signal: abortController.signal,
         });
         const data = await response.json();
@@ -85,15 +86,15 @@ const Publications: React.FC = () => {
         const endpoint =
           activeTab === "papers"
             ? selectedYear
-              ? `./api/papers-${selectedYear}.json`
-              : "/api/papers.json"
+              ? `${baseUrl}api/papers-${selectedYear}.json`
+              : `${baseUrl}api/papers.json`
             : activeTab === "presentations"
             ? selectedYear
-              ? `./api/presentations-${selectedYear}.json`
-              : "/api/presentations.json"
+              ? `${baseUrl}api/presentations-${selectedYear}.json`
+              : `${baseUrl}api/presentations.json`
             : selectedYear
-            ? `./api/misc-${selectedYear}.json`
-            : "/api/misc.json";
+            ? `${baseUrl}api/misc-${selectedYear}.json`
+            : `${baseUrl}api/misc.json`;
 
         const response = await fetch(endpoint, {
           signal: abortController.signal,
@@ -130,7 +131,7 @@ const Publications: React.FC = () => {
     return () => {
       abortController.abort();
     };
-  }, [activeTab, selectedYear]);
+  }, [activeTab, selectedYear, baseUrl]);
 
   // 表示するアイテムの制限
   const getDisplayedItems = <T extends Paper | Presentation | Misc>(

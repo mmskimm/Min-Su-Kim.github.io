@@ -11,13 +11,14 @@ const Career: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [careerItems, setCareerItems] = useState<CareerItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const fetchCareerData = async () => {
       setIsLoading(true);
       try {
         const response = await fetch(
-          `./content/career/career_${i18n.language}.json`
+          `${baseUrl}content/career/career_${i18n.language}.json`
         );
         const data = await response.json();
 
@@ -41,7 +42,7 @@ const Career: React.FC = () => {
     };
 
     fetchCareerData();
-  }, [i18n.language]);
+  }, [i18n.language, baseUrl]);
 
   return (
     <section id="career" className="py-16">

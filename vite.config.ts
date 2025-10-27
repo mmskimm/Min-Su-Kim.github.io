@@ -5,7 +5,7 @@ import { resolve } from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "./", // GitHub Pagesのサブディレクトリでのデプロイ用
+  base: "/Min-Su-Kim.github.io/", // GitHub Pagesのサブディレクトリでのデプロイ用
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
