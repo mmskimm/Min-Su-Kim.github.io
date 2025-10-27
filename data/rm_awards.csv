@@ -1,9 +1,10 @@
 awards
 ID,賞名(日本語),賞名(英語),タイトル(日本語),タイトル(英語),授与機関(日本語),授与機関(英語),受賞年月,主要な業績かどうか
-example-id,賞名,"Poster Award",タイトル,"International Workshop on Advanced and In-situ Microscopies of Functional Nanomaterials and Devices (IAMNano)",2025-09,false
+49341460,青葉研究奨励賞,"Poster Award",null,null,青葉研究奨励会,"International Workshop on Advanced and In-situ Microscopies of Functional Nanomaterials and Devices (IAMNano)",2025-09,false
 49341459,青葉研究奨励賞,"Best Oral Presentation Award",null,null,青葉研究奨励会,"Annual Spring Conference of Korean Society of Microscopy",2025-05,false
 46398327,理学系研究科研究科長賞（研究最優秀）,"Best Oral Award",null,null,京都大学,"International Conference on Electronic Materials and Nanotechnology for Green Environment (ENGE)",2024-11,false
+49341465,青葉研究奨励賞,"Best Poster Award",null,null,青葉研究奨励会,"Workshop on Glocal Center for Quantum Physical Properties",2024-09,false
 46398303,理学部長賞,"The Young Scientist Award",null,null,京都大学,"The 22nd International Nanotech Symposium & Exhibition NANO KOREA",2024-07,false
 46398299,理学部長賞,"Best Poster Award",null,null,京都大学,"International Microscopy Congress (IMC)",2023-09, false
 46398295,理学部長賞,"Poster Award",null,null,京都大学,"International Workshop on Advanced and In-situ Microscopies of Functional Nanomaterials and Devices (IAMNano)",2023-06,false
-example-id,賞名,"Outstanding Presentation Award",タイトル,"Functional Materials Science (FMS) Workshop",2023-06,false
+49341455,青葉研究奨励賞,"Outstanding Presentation Award",null,null,青葉研究奨励会,"Functional Materials Science (FMS) Workshop",2025-06,false
