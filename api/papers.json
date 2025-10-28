@@ -1,0 +1,41 @@
+[
+  {
+    "id": "paper-1",
+    "title": "Charge disproportionation at twisted bilayer SrTiO3 interface driven by local atomic registry",
+    "titleJa": "あなたの論文タイトル1",
+    "authors": "Min-Su Kim, Kyoungjun Lee, Ryo Ishikawa, Kyung Song, Naafis Ahnaf Shahed, Ki-Tae Eom, Mark S. Rzchowski, Evgeny Y. Tsymbal, Naoya Shibata, Teruyasu Mizoguchi, Chnag-Beom Eom, Si-Young Choi",
+    "authorsJa": "著者1, 著者2",
+    "journal": "ACS Nano",
+    "journalJa": "ジャーナル名",
+    "year": "2025",
+    "month": "10",
+    "doi": "10.1021/acsnano.5c11685",
+    "isMainWork": false
+  },
+  {
+    "id": "paper-2",
+    "title": "Site Selectivity of Single Dopant in High Nickel Cathodes for Lithium-Ion Batteries",
+    "titleJa": "Site Selectivity of Single Dopant in High Nickel Cathodes for Lithium-Ion Batteries",
+    "authors": "So-Yeon Kim, Yu-Jeong Yang, Eungyu Lee, Min-Su Kim, Kyoung-June Go, Minseuk Kim, Gi-Yeop Kim, Sungho Choi, Si-Young Choi",
+    "authorsJa": "著者1, 著者2",
+    "journal": "Chemical Engineering Journal",
+    "journalJa": "ジャーナル名",
+    "year": "2024",
+    "month": "02",
+    "doi": "10.1016/j.cej.2024.148869",
+    "isMainWork": false
+  },
+  {
+    "id": "paper-3",
+    "title": "Observation of Hidden Polar Phases and Flux Closure Domain Topology in Bi2WO6 Thin Films",
+    "titleJa": "Observation of Hidden Polar Phases and Flux Closure Domain Topology in Bi2WO6 Thin Films",
+    "authors": "Young-Jun Kwon, Youngki Yeo, Min-Su Kim, Yong-Jin Kim, Heung-Sik Park, Jaegyu Kim, Si-Young Choi, Chan-Ho Yang",
+    "authorsJa": "著者1, 著者2",
+    "journal": "Nano Letters",
+    "journalJa": "ジャーナル名",
+    "year": "2023",
+    "month": "05",
+    "doi": "10.1021/acs.nanolett.3c01009",
+    "isMainWork": false
+  }
+]
